@@ -38,8 +38,8 @@
 .circle {
 	position: absolute;
 	border-radius: 50%;
-	box-shadow: 0 0 2px #514eff, 0 0 10px #514eff;
-	background-color: #514eff;
+	box-shadow: 0 0 2px #302cff, 0 0 2px #302cff;
+	background-color: #302cff;
 }
 
 .timeOver {
@@ -48,4 +48,13 @@
 
 .hide {
 	opacity: 0;
+}
+
+.restart {
+	font-size: 16px;
+	margin: 2vh;
+	padding: 16px;
+	border: none;
+	border-radius: 10px;
+	background-color: #585858;
 }

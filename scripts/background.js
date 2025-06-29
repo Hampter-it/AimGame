@@ -1,5 +1,5 @@
 const board = document.getElementById('background')
-const SQUARE_NUMBER = 400
+const SQUARE_NUMBER = 380
 
 for (let i = 0; i < SQUARE_NUMBER; i++) {
 	const square = document.createElement('div')

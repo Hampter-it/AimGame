@@ -72,3 +72,12 @@ function createRandomCircle() {
 function getRandomNumber(min, max) {
 	return Math.round(Math.random() * (max - min) + min)
 }
+
+document.getElementById('restart').addEventListener('click', () => {
+	screens.forEach(element => {
+		element.classList.remove('up')
+	})
+	setInterval(() => {
+		window.location.reload()
+	}, 1000)
+})
