@@ -4,7 +4,7 @@ const timeOver = document.getElementById('timeOver')
 const background = document.getElementById('background')
 const screens = document.querySelectorAll('.screen')
 
-let time = 11
+let time = 0
 let score = 0
 
 start.addEventListener('click', event => {
@@ -20,8 +20,13 @@ timer.addEventListener('click', event => {
 	}
 })
 
-// DEBUG
-startGame()
+background.addEventListener('click', event => {
+	if (event.target.classList.contains('circle')) {
+		event.target.remove()
+		score++
+		createRandomCircle()
+	}
+})
 
 function startGame() {
 	setInterval(declaration, 1000)
@@ -45,7 +50,10 @@ function setTime(value) {
 	timeOver.innerHTML = `00:${value}`
 }
 
-function finishGame() {}
+function finishGame() {
+	timeOver.classList.add('hide')
+	background.innerHTML = `<h1>Score: ${score}</h1>`
+}
 
 function createRandomCircle() {
 	const circle = document.createElement('div')

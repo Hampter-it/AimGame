@@ -45,3 +45,7 @@
 .timeOver {
 	margin-top: 20vh;
 }
+
+.hide {
+	opacity: 0;
+}
