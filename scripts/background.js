@@ -1,4 +1,4 @@
-const board = document.querySelector('#background')
+const board = document.getElementById('background')
 const SQUARE_NUMBER = 400
 
 for (let i = 0; i < SQUARE_NUMBER; i++) {
