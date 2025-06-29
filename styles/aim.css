@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.screen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  transition: all ease 1s;
+}
+
+.screen.up {
+	margin-top: -100vh;
+}
+
+.start {
+	user-select: none;
+	cursor: pointer;
+}
+
+.timer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.timer__button {
+	margin: 30px;
+	padding: 20px;
+	user-select: none;
+	cursor: pointer;
+	background-color: #3f3f3f;
+	border-radius: 10px;
+}
+
+.circle {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 0 0 2px #514eff, 0 0 10px #514eff;
+	background-color: #514eff;
+}
+
+.timeOver {
+  margin-top: 20vh;
+}

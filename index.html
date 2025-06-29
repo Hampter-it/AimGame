@@ -3,11 +3,33 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="background/background.css" />
-		<link rel="stylesheet" href="aimGame/aim.css" />
-		<script src="background/background.js" defer></script>
-		<script src="aimGame/aim.js" defer></script>
+		<link rel="stylesheet" href="styles/background.css" />
+		<link rel="stylesheet" href="styles/aim.css" />
+		<link rel="stylesheet" href="styles/index.css" />
+		<script src="scripts/background.js" defer></script>
+		<script src="scripts/aim.js" defer></script>
 		<title>AimGame</title>
 	</head>
-	<body></body>
+	<body>
+		<div class="screen up">
+			<div>
+				<h1>Aim Game</h1>
+				<a class="start" id="start"><h2>Start Game</h2></a>
+			</div>
+		</div>
+		<div class="screen up">
+			<div>
+				<h1>Выберите время</h1>
+				<ul class="timer" id="timer">
+					<li class="timer__button" data-time="10">10 sec</li>
+					<li class="timer__button" data-time="20">20 sec</li>
+					<li class="timer__button" data-time="30">30 sec</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<h2 class="timeOver" id="timeOver">00:00</h2>
+			<div class="background" id="background"></div>
+		</div>
+	</body>
 </html>
